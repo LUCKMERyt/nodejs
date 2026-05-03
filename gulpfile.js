@@ -49,7 +49,7 @@ exports.serve = serve;
 // Dev сервер
 gulp.task('default', gulp.series( // ? Сначала компилируем стили и копируем HTML, затем запускаем сервер и наблюдаем за изменениями
     gulp.parallel(styles, html),   // 1. Параллельно компилируем стили и HTML
-    serve,                       // 2. Запускаем сервер
+    serve,                       // 2. Запускает browserSync сервер
     watch                        // 3. Наблюдаем за изменениями
 ));
 
